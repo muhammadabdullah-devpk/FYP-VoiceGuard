@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">VoiceGuard</string>
+    <string name="app_tagline">Real-time on-device detection of AI-cloned voice scam calls</string>
+
+    <!-- Main screen -->
+    <string name="btn_history">History</string>
+    <string name="btn_settings">Settings</string>
+    <string name="btn_back">Back</string>
+    <string name="status_idle">Protection idle. Choose a mode and tap Start.</string>
+    <string name="status_listening">Listening to the call audio...</string>
+    <string name="status_analyzing">Analyzing the recorded call...</string>
+    <string name="status_safe">Call audio: genuine (real speaker)</string>
+    <string name="status_caution">Caution: the voice score is raised</string>
+    <string name="status_alert">WARNING: synthetic or cloned voice suspected!</string>
+    <string name="confidence_none">AI-voice confidence: --</string>
+    <string name="confidence_fmt">AI-voice confidence: %1$d%% | %2$s</string>
+    <string name="metrics_fmt">Windows scored: %1$d | Last: %2$d ms | Average: %3$d ms (%4$s)</string>
+    <string name="latency_ok">within the 300 ms target</string>
+    <string name="latency_slow">above the 300 ms target</string>
+    <string name="no_model_hint">The voice model is not loaded. Only scam keyword spotting works.</string>
+
+    <string name="family_title">Family code-word reminder</string>
+
+    <string name="keywords_title">Monitored scam keywords</string>
+    <string name="keywords_none">No scam keywords detected in this session.</string>
+    <string name="keywords_note">A keyword is only a hint and never proves fraud. It adds to an alert only together with the voice score.</string>
+    <string name="keywords_strong">Strong keyword signal. Do not share codes, PINs or card details.</string>
+
+    <string name="mode_title">Capture mode</string>
+    <string name="mode_live">Speakerphone</string>
+    <string name="mode_file">Recorded call</string>
+    <string name="mode_test">Test call</string>
+    <string name="mode_live_desc">Put the call on speakerphone and keep the phone near the speaker. The microphone listens to the caller. Android does not let apps read call audio directly, so this mode works on a best-effort basis.</string>
+    <string name="mode_file_desc">Pick a call recording that you made with the consent of everyone on the call. This is the most reliable way to check a call.</string>
+    <string name="mode_test_desc">Practice call inside the app. Play or speak audio near the microphone, or type words in the box below to test the scam keyword check.</string>
+
+    <string name="btn_start_monitor">Start Live Protection</string>
+    <string name="btn_stop_monitor">Stop Protection</string>
+    <string name="btn_select_file">Select Recorded Call</string>
+    <string name="btn_cancel_analysis">Cancel Analysis</string>
+    <string name="btn_start_test">Start Test Call</string>
+    <string name="btn_stop_test">Stop Test Call</string>
+
+    <string name="sim_title">Transcript simulator</string>
+    <string name="sim_help">Type what a caller might say. Needs no microphone. During a running test call the text is added to that session.</string>
+    <string name="sim_hint">Example: please tell me the OTP, it is urgent</string>
+    <string name="sim_button">Check for scam keywords</string>
+
+    <string name="privacy_note">All audio is processed on this phone and is never uploaded. Only scores, alerts and matched keywords are saved. No audio is stored.</string>
+    <string name="default_recording_name">Recorded call</string>
+
+    <string name="toast_mic_required">The microphone permission is required for VoiceGuard.</string>
+    <string name="toast_enter_text">Please enter some text first.</string>
+    <string name="toast_text_sent">Text added to the running test call.</string>
+    <string name="toast_busy">Please stop the running session first.</string>
+    <string name="toast_overlay_permission">Allow VoiceGuard to display over other apps, then come back.</string>
+    <string name="toast_test_alert_sent">Test alert sent.</string>
+    <string name="toast_export_ok">Results exported.</string>
+    <string name="toast_export_failed">Export failed.</string>
+
+    <!-- Service and notifications -->
+    <string name="channel_live">VoiceGuard protection service</string>
+    <string name="channel_alert">VoiceGuard warnings</string>
+    <string name="notif_title">VoiceGuard protection active</string>
+    <string name="notif_starting">Starting...</string>
+    <string name="notif_collecting">Listening. Waiting for the first window of audio.</string>
+    <string name="notif_no_model">Voice model not loaded. Keyword spotting only.</string>
+    <string name="notif_score">AI-voice score %1$d%% (%2$s)</string>
+    <string name="notif_alert">Warning: possible AI voice (%1$d%%)</string>
+    <string name="notif_stop">Stop</string>
+    <string name="msg_starting">Starting the microphone...</string>
+    <string name="msg_saving">Stopping and saving the session...</string>
+    <string name="alert_title">Possible AI-cloned voice on this call</string>
+    <string name="alert_detail">AI-voice confidence %1$d%% (%2$s).</string>
+    <string name="overlay_title">VoiceGuard warning: possible AI-cloned voice</string>
+    <string name="overlay_dismiss">Dismiss</string>
+    <string name="test_alert_reason">This is a test of the warning banner.</string>
+
+    <!-- History and detail -->
+    <string name="history_title">History</string>
+    <string name="history_empty">No sessions yet. Start a live protection session or analyze a recorded call.</string>
+    <string name="history_summary_fmt">Sessions: %1$d | Sessions with a warning: %2$d | Warnings: %3$d | Marked as false alarm: %4$d (%5$d%% of warnings)</string>
+    <string name="btn_export_csv">Export results (CSV)</string>
+    <string name="btn_clear_history">Clear history</string>
+    <string name="clear_history_message">All saved sessions, scores, warnings and keyword hits will be deleted from this phone.</string>
+    <string name="btn_delete">Delete</string>
+    <string name="session_stats_fmt">%1$s | %2$d windows | average %3$d%% | peak %4$d%% | warnings: %5$d | %6$d ms average</string>
+    <string name="detail_title">Session</string>
+    <string name="detail_summary_fmt">Started: %1$s\nSource: %2$s\nResult: %3$s\nWindows scored: %4$d | average AI-voice score %5$d%% | peak %6$d%%\nAverage latency: %7$d ms</string>
+    <string name="detail_alerts">Warnings (%1$d)</string>
+    <string name="detail_keywords">Scam keywords heard (%1$d)</string>
+    <string name="detail_windows">Window scores (%1$d)</string>
+    <string name="detail_none">None</string>
+    <string name="detail_marked_false">Marked as false alarm</string>
+    <string name="detail_window_title">Window %1$d (starts at %2$.1f s)</string>
+    <string name="detail_window_sub">AI-voice score %1$d%% | smoothed %2$d%% | %3$d ms</string>
+    <string name="btn_false_alarm">False alarm</string>
+    <string name="btn_undo">Undo</string>
+
+    <!-- Settings -->
+    <string name="set_detection">Detection</string>
+    <string name="set_threshold_fmt">Warning threshold: %1$d%%</string>
+    <string name="set_threshold_help">A warning is raised when the smoothed AI-voice score stays at or above this value. Lower values warn earlier but cause more false alarms.</string>
+    <string name="set_window_label">Window length</string>
+    <string name="set_win_2">2 s</string>
+    <string name="set_win_3">3 s</string>
+    <string name="set_win_4">4 s</string>
+    <string name="set_source_label">Microphone source (live modes)</string>
+    <string name="set_src_mic">Microphone (default)</string>
+    <string name="set_src_voice_rec">Voice recognition</string>
+    <string name="set_src_unprocessed">Unprocessed</string>
+    <string name="set_source_help">Different phones treat these sources differently during a call. Try each one on your test phones (capture study). If a source is not available, the default microphone is used.</string>
+    <string name="set_alerts">Warnings</string>
+    <string name="set_family_label">Family code-word reminder text</string>
+    <string name="set_family_help">Shown in every warning. Do not type the secret code word itself here, only a reminder to ask for it.</string>
+    <string name="set_vibrate">Vibrate on warning</string>
+    <string name="set_overlay">Floating warning banner during calls</string>
+    <string name="set_overlay_help">Draws the warning on top of the dialer. Needs the permission to display over other apps.</string>
+    <string name="set_test_alert">Send a test warning</string>
+    <string name="set_keywords">Scam keywords</string>
+    <string name="set_keywords_enable">Listen for scam keywords (offline)</string>
+    <string name="set_manage_keywords">Manage keyword list</string>
+    <string name="set_model">Model and speed</string>
+    <string name="set_benchmark">Run latency benchmark</string>
+    <string name="benchmark_running">Running 30 test windows...</string>
+    <string name="benchmark_no_model">The voice model is not loaded, so there is nothing to measure.</string>
+    <string name="benchmark_pass">Result: PASS (95th percentile is under 300 ms).</string>
+    <string name="benchmark_fail">Result: above the 300 ms target on this phone.</string>
+    <string name="benchmark_result_fmt">Device: %1$s\nRuns: %2$d\nMean: %3$.0f ms\nMedian: %4$.0f ms\n95th percentile: %5$.0f ms\nMax: %6$.0f ms\nTarget: under 300 ms per window.\n%7$s</string>
+
+    <!-- Keywords screen -->
+    <string name="keywords_screen_title">Scam keywords</string>
+    <string name="keywords_screen_help">Default keywords come from the proposal (English and Urdu in Roman script). You can add your own words. Weight 1 is a weak hint, 3 is a strong hint.</string>
+    <string name="btn_add_keyword">Add keyword</string>
+    <string name="btn_add">Add</string>
+    <string name="kw_hint">Word or phrase</string>
+</resources>

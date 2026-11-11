@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,22 L78,31 L78,52 C78,67 68,78 54,85 C40,78 30,67 30,52 L30,31 Z" />
+    <!-- Sound wave bars -->
+    <path
+        android:fillColor="#00A86B"
+        android:pathData="M44,46 L48,46 L48,62 L44,62 Z" />
+    <path
+        android:fillColor="#00A86B"
+        android:pathData="M52,40 L56,40 L56,68 L52,68 Z" />
+    <path
+        android:fillColor="#00A86B"
+        android:pathData="M60,46 L64,46 L64,62 L60,62 Z" />
+</vector>

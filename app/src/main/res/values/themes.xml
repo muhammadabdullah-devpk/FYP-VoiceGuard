@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (fixed light theme so the status colours stay readable). -->
+    <style name="Theme.VoiceGuard" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/card_bg</item>
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+    </style>
+</resources>
